@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Poppins", sans-serif;
+
   --color-transparent: transparent;
   --color-primary1: #388abc;
   --color-secondary1: #f9f9f9;
-
   --color-nu10: #ffffff;
   --color-nu20: #000000;
   --color-nu30: #def2ff;
   --color-nu40: #c2c2c2;
+  --color-nu50: #a5a5a5;
 
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -131,17 +133,17 @@
   }
 
   * {
-    font-family: "Lexend", sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
   }
 
-  .fontMont {
+  /* .fontMont {
     font-family: "Montserrat", serif;
   }
 
   .fontLato {
     font-family: "Lato", serif;
-  }
+  } */
 }
 
 @layer utilities {
@@ -192,6 +194,7 @@
   body {
     color: #021120;
     background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 150%;
