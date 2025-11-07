@@ -1,0 +1,68 @@
+[
+  {
+    "bookId": 1,
+    "title": "The Silent Garden",
+    "location": "New York City, NY",
+    "image": "https://i.ibb.co.com/Gz602hy/1c0bfa0df65a8e22e3ec0d873ece25eb195a7f73-1.png",
+    "description": "A captivating story of mystery and discovery set in the heart of New York.",
+    "area": "1200 sqft",
+    "room": 3,
+    "washroom": 2,
+    "price": "$350,000"
+  },
+  {
+    "bookId": 2,
+    "title": "Ocean Breeze Apartment",
+    "location": "Miami, FL",
+    "image": "https://i.ibb.co.com/Gz602hy/1c0bfa0df65a8e22e3ec0d873ece25eb195a7f73-1.png",
+    "description": "Modern apartment with stunning ocean views and luxurious amenities.",
+    "area": "950 sqft",
+    "room": 2,
+    "washroom": 1,
+    "price": "$280,000"
+  },
+  {
+    "bookId": 3,
+    "title": "Mountain Retreat Cabin",
+    "location": "Aspen, CO",
+    "image": "https://i.ibb.co.com/MxbrdQ5y/0bd260e3219845c27a9c2ec1337fc0dd44370dbc.jpg",
+    "description": "Cozy cabin surrounded by pine forests, perfect for a peaceful getaway.",
+    "area": "1500 sqft",
+    "room": 4,
+    "washroom": 3,
+    "price": "$450,000"
+  },
+  {
+    "bookId": 4,
+    "title": "Downtown Loft",
+    "location": "Chicago, IL",
+    "image": "https://i.ibb.co.com/bg7W7qbS/b74b4d3f9a7a1c485672c5c4172fd9b7c9f880a8.jpg",
+    "description": "Stylish loft in the downtown area, close to restaurants and nightlife.",
+    "area": "1100 sqft",
+    "room": 2,
+    "washroom": 2,
+    "price": "$400,000"
+  },
+  {
+    "bookId": 5,
+    "title": "Suburban Family Home",
+    "location": "Austin, TX",
+    "image": "https://i.ibb.co.com/5XwyPq1V/c51da60cb3b77826be4c66bea666d6ad77d3a572.jpg",
+    "description": "Spacious family home with a backyard and friendly neighborhood.",
+    "area": "1800 sqft",
+    "room": 5,
+    "washroom": 3,
+    "price": "$520,000"
+  },
+  {
+    "bookId": 6,
+    "title": "Lakeview Villa",
+    "location": "Lake Tahoe, CA",
+    "image": "https://i.ibb.co.com/DHms5Wwh/4b7fc1615f3debb6fccbf210025b5ff0a8a62146.jpg",
+    "description": "Luxury villa with panoramic lake views and modern interior design.",
+    "area": "2500 sqft",
+    "room": 4,
+    "washroom": 4,
+    "price": "$1,200,000"
+  }
+]

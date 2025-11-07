@@ -1,0 +1,38 @@
+/*team card icon show and hidden start*/
+.share-icon {
+  opacity: 0;
+  transition: 0.8s;
+  margin-right: -2rem;
+}
+.share-icon:hover .show {
+  opacity: 1;
+  transition: 0.8s;
+  margin-right: 0;
+}
+
+.btn-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-1 {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-2 {
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: none; /* hidden */
+}
+
+/* Hover Button 1 -> Show Button 2 */
+.btn-wrapper:hover .btn-2 {
+  display: inline-block;
+}
