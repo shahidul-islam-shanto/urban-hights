@@ -10,6 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { BiSquareRounded } from "react-icons/bi";
 import { FaBed } from "react-icons/fa";
 import { FaBath } from "react-icons/fa6";
+import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import "./FeaturedCard.css";
 
@@ -22,7 +23,6 @@ const FeaturedCard = ({ featured }) => {
     <>
       <div className=" bg-nu10">
         <div className="relative overflow-hidden group mb-6 ">
-          <div className="absolute inset-0 bg-[#e8e9eaa4] opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
           <img className="w-full h-[360px]" src={image} alt="" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-300">
             <div className="flex justify-center items-center gap-4">
@@ -76,11 +76,16 @@ const FeaturedCard = ({ featured }) => {
         </div>
         <div className="relative">
           <div className="absolute -top-11 left-5 z-30">
-            <p className="px-6 py-2 bg-primary1 font-semibold text-nu10 rounded-full">{price}/m</p>
+            <p className="px-6 py-2 bg-primary1 font-semibold text-nu10 rounded-full">
+              {price}/m
+            </p>
           </div>
           <div className="px-4 py-4 z-10">
             <h5 className="text-nu60 mb-3">{title}</h5>
-            <p className="text-nu40 mb-2">{location}</p>
+            <p className="text-nu40 mb-2 flex items-center gap-1">
+              <IoLocationOutline className="text-primary1 text-[20px]" />{" "}
+              {location}
+            </p>
             <p className="text-nu40 mb-3">{description}</p>
             <div className="flex items-center gap-3">
               <p className="px-2 py-1 border-2 border-nu40 text-nu60 flex items-center gap-1">

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const BuyOrSell = () => {
   return (
     <>
-      <div className="buyOrSell-section py-40">
+      <div className="buyOrSell-section px-6 lg:py-40 md:py-32 sm:py-28 py-20">
         <div className="container-2">
           <div className="text-center">
             <h1 className="text-nu10 mb-6">
