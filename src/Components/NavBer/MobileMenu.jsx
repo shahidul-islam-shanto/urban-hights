@@ -2,10 +2,117 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(false);
+  // const [openDropdown, setOpenDropdown] = useState(false);
+
+  // const [activeDropdown, setActiveDropdown] = useState(null);
+
+  // const toggleDropdown = (index) => {
+  //   setActiveDropdown(activeDropdown === index ? null : index);
+  // };
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const toggleDropdown = (index) => {
+    setActiveDropdown(activeDropdown === index ? null : index);
+  };
+
+  // const menus = [
+  //   {
+  //     title: "Company",
+  //     // links: ["About Us", "Investor Relations", "Careers"],
+  //   },
+  //   {
+  //     title: "Features",
+  //     links: ["Modern UI", "Fast API", "High Security"],
+  //   },
+  //   {
+  //     title: "Download",
+  //     links: ["iOS App", "Android App"],
+  //   },
+  //   {
+  //     title: "FAQ",
+  //     links: ["Support", "Terms & Policy"],
+  //   },
+  // ];
+
+  // const menuItems = [
+  //   {
+  //     name: "Home",
+  //     path: "/",
+  //   },
+  //   {
+  //     name: "Properties",
+  //     type: "dropdown",
+  //     links: ["Demo", "Demo"],
+  //   },
+  //   {
+  //     name: "Services",
+  //     type: "dropdown",
+  //     links: ["Demo", "Demo"],
+  //   },
+  //   {
+  //     name: "Features",
+  //     type: "dropdown",
+  //     links: ["Demo", "Demo"],
+  //   },
+  //   {
+  //     name: "Agents",
+  //     type: "dropdown",
+  //     links: ["Demo", "Demo"],
+  //   },
+  //   {
+  //     name: "Contact",
+  //     path: "/contact",
+  //   },
+  // ];
+
+  const menuItems = [
+    {
+      name: "Home",
+      type: "link",
+      path: "/",
+    },
+    {
+      name: "Properties",
+      type: "dropdown",
+      links: [
+        { name: "Demo", path: "javascript:void(0)" },
+        { name: "Demo", path: "javascript:void(0)" },
+      ],
+    },
+    {
+      name: "Services",
+      type: "dropdown",
+      links: [
+        { name: "Demo", path: "javascript:void(0)" },
+        { name: "Demo", path: "javascript:void(0)" },
+      ],
+    },
+    {
+      name: "Features",
+      type: "dropdown",
+      links: [
+        { name: "Demo", path: "javascript:void(0)" },
+        { name: "Demo", path: "javascript:void(0)" },
+      ],
+    },
+    {
+      name: "Agents",
+      type: "dropdown",
+      links: [
+        { name: "Demo", path: "javascript:void(0)" },
+        { name: "Demo", path: "javascript:void(0)" },
+      ],
+    },
+    {
+      name: "Contact",
+      type: "link",
+      path: "javascript:void(0)",
+    },
+  ];
 
   return (
     <>
@@ -13,7 +120,7 @@ const MobileMenu = () => {
         <ul className="max-w-[90vw] flex flex-wrap justify-between items-center relative mx-auto py-6">
           <div className="">
             <Link to={"/"} className="flex items-center">
-              <span className="fs-three">Urban</span>{" "}
+              <span className="fs-three">Urban</span>
               <span className="fs-three text-primary1">Hights</span>
             </Link>
           </div>
@@ -43,73 +150,98 @@ const MobileMenu = () => {
               className="absolute top-5 right-5 text-3xl"
               onClick={() => setOpen(false)}
             >
-              ✕
+              <IoClose />
             </button>
+            {/* dropdown menu */}
+            <div className="bg-black text-white">
+              {/* <ul className="space-y-2 text-[24px]">
+                {menuItems.map((item, index) => (
+                  <li key={index} className="text-[24px]">
+                    {item.type === "dropdown" ? (
+                      <>
+                        <button
+                          className="w-full flex items-center gap-2 text-[24px] justify-between py-2"
+                          onClick={() => toggleDropdown(index)}
+                        >
+                          {item.name}
+                          <span
+                            className={`transition-transform duration-300 ${
+                              activeDropdown === index ? "rotate-180" : ""
+                            }`}
+                          >
+                            <IoIosArrowDown />
+                          </span>
+                        </button>
 
-            <nav className="bg-black text-white">
-              <ul className="px-4">
-                {/* Dropdown */}
-                <li>
-                  <button
-                    className="w-full flex items-center justify-between py-2"
-                    onClick={() => setOpenDropdown(!openDropdown)}
-                  >
-                    Company
-                    <span
-                      className={`transition-transform duration-300 ${
-                        openDropdown ? "rotate-180" : ""
-                      }`}
-                    >
-                      <IoIosArrowDown />
-                    </span>
-                  </button>
-
-                  <ul
-                    className={`overflow-hidden transition-all duration-500 pl-3 ${
-                      openDropdown
-                        ? "max-h-40 opacity-100"
-                        : "max-h-0 opacity-0"
-                    }`}
-                  >
-                    <li>
-                      <Link
-                        to={"javascript:void(0)"}
-                        href="#"
-                        className="block py-2"
-                      >
-                        Demo
+                        <ul
+                          className={`overflow-hidden transition-all duration-500 pl-3 ${
+                            activeDropdown === index
+                              ? "max-h-40 opacity-100"
+                              : "max-h-0 opacity-0"
+                          }`}
+                        >
+                          {item.links.map((sub, i) => (
+                            <li key={i}>
+                              <Link to="#" className="block py-2">
+                                {sub}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    ) : (
+                      <Link to={item.path} className="block py-2">
+                        {item.name}
                       </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to={"javascript:void(0)"}
-                        href="#"
-                        className="block py-2"
-                      >
-                        Demo
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
+                    )}
+                  </li>
+                ))}
+              </ul> */}
 
-                {/* Other menu items — they stay visible ✅ */}
-                <li>
-                  <a href="#" className="block py-2">
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="block py-2">
-                    Download
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="block py-2">
-                    FAQ
-                  </a>
-                </li>
+              <ul className="space-y-2">
+                {menuItems.map((item, index) => (
+                  <li key={index}>
+                    {item.type === "dropdown" ? (
+                      <>
+                        <button
+                          className="w-full flex items-center gap-2 text-[24px] justify-between py-2"
+                          onClick={() => toggleDropdown(index)}
+                        >
+                          {item.name}
+                          <span
+                            className={`transition-transform duration-300 ${
+                              activeDropdown === index ? "rotate-180" : ""
+                            }`}
+                          >
+                            <IoIosArrowDown />
+                          </span>
+                        </button>
+
+                        <ul
+                          className={`overflow-hidden transition-all duration-500 pl-3 ${
+                            activeDropdown === index
+                              ? "max-h-40 opacity-100"
+                              : "max-h-0 opacity-0"
+                          }`}
+                        >
+                          {item.links.map((sub, i) => (
+                            <li key={i}>
+                              <Link to={sub.path} className="block py-2">
+                                {sub.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    ) : (
+                      <Link to={item.path} className="block py-2">
+                        {item.name}
+                      </Link>
+                    )}
+                  </li>
+                ))}
               </ul>
-            </nav>
+            </div>
           </div>
         </ul>
       </nav>

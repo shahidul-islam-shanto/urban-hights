@@ -17,7 +17,7 @@ const NavBer = () => {
   return (
     <>
       <div className="py-2 bg-nu10">
-        <nav className="relative container-2 px-2 py-4 ">
+        <nav className="relative container-2 px-2 py-4 z-40 ">
           <div className="lg:block hidden">
             <div className=" px-10 mx-auto flex justify-between items-center xl:gap-6 gap-2">
               <div className="">
