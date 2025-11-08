@@ -6,6 +6,7 @@ import FeaturedProperties from "../../Components/FeaturedProperties/FeaturedProp
 import FeaturedCard from "../../Components/FeaturedCard/FeaturedCard";
 import RealityProperty from "../../Components/RealityProperty/RealityProperty";
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import MeetOurTeam from "../../Components/MeetOurTeam/MeetOurTeam";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
         }
       />
       <Testimonials />
+      <MeetOurTeam title={"Meet Our Expert Agents"} description={"Real experts. Real results. Meet the people who turn your property goals into reality."} />
     </>
   );
 };

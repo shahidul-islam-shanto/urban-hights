@@ -11,6 +11,8 @@ import { BiSquareRounded } from "react-icons/bi";
 import { FaBed } from "react-icons/fa";
 import { FaBath } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { IoLocationOutline } from "react-icons/io5";
+
 import "./FeaturedCard.css";
 
 const FeaturedCard = ({ featured }) => {
@@ -82,7 +84,9 @@ const FeaturedCard = ({ featured }) => {
           </div>
           <div className="px-4 py-4 z-10">
             <h5 className="text-nu60 mb-3">{title}</h5>
-            <p className="text-nu40 mb-2">{location}</p>
+            <p className="text-nu40 mb-2 flex items-center gap-1">
+              <IoLocationOutline className="text-primary1" /> {location}
+            </p>
             <p className="text-nu40 mb-3">{description}</p>
             <div className="flex items-center gap-3">
               <p className="px-2 py-1 border-2 border-nu40 text-nu60 flex items-center gap-1">
