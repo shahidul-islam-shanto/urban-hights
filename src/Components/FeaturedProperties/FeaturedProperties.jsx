@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import FeaturedPropertiesCard from "../FeaturedPropertiesCard/FeaturedPropertiesCard";
 
-
-
 const FeaturedProperties = ({ title, description }) => {
   const [propertiesCard, setPropertiesCard] = useState([]);
 
@@ -15,7 +13,7 @@ const FeaturedProperties = ({ title, description }) => {
   }, []);
   return (
     <>
-      <div className="pt-20 bg-secondary1 overflow-hidden">
+      <div className="xl:pt-20 md:pt-18 sm:pt-16 pt-12 bg-secondary1 overflow-hidden">
         <div className="container-2">
           <div className="mb-12">
             <h1 className="text-nu20 mb-4">{title}</h1>

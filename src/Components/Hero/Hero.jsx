@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="hero-section h-screen  md:px-10 sm:px-6 px-3 ">
         <div className="container-2">
           <div className="relative z-10">
-            <div className=" bg-[#e8e9eabb] rounded-md xl:px-16 lg:px-12 md:px-10 sm:px-8 px-6 xl:py-20 lg:py-12 md:py-10 sm:py-8 py-6  w-full absolute left-1/2 xl:top-60 md:top-60  top-[30px] -translate-x-1/2 z-10">
+            <div className=" bg-[#e8e9eabb] rounded-md xl:px-16 lg:px-12 md:px-10 sm:px-8 px-3 xl:py-20 lg:py-12 md:py-10 sm:py-8 py-6  w-full absolute left-1/2 xl:top-60 md:top-60  top-[30px] -translate-x-1/2 z-10">
               <div className="relative">
                 <div className="absolute xl:-top-25 md:-top-18 -top-10 left-1/2 -translate-x-1/2">
                   <h5 className="px-4 py-2 overflow-hidden md:w-[500px] w-[300px] text-center rounded-full bg-primary1 text-nu10 font-medium md:text-[24px] text-[14px] ">THE BEST WAY TO FIND YOUR HOME</h5>

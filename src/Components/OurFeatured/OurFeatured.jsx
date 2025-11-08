@@ -15,7 +15,7 @@ const OurFeatured = ({ title, description }) => {
 
   return (
     <>
-      <div className="py-16 sm:px-12 px-3 bg-secondary1">
+      <div className="xl:py-20 md:py-18 sm:py-16 py-12 sm:px-12 px-3 bg-secondary1">
         <div className="container-2">
           <div className="">
             <div className="text-center mb-12">
@@ -36,8 +36,12 @@ const OurFeatured = ({ title, description }) => {
             </div>
 
             <div className="flex justify-center items-center gap-2">
-              <button className="px-3 py-1 border-2 border-primary1 hover:bg-primary1 text-nu20">1</button>
-              <button className="px-3 py-1 border-2 border-primary1 hover:bg-primary1 text-nu20">2</button>
+              <button className="px-3 py-1 border-2 border-primary1 hover:bg-primary1 text-nu20">
+                1
+              </button>
+              <button className="px-3 py-1 border-2 border-primary1 hover:bg-primary1 text-nu20">
+                2
+              </button>
               <button className="px-2 py-2 border-2 border-primary1 hover:bg-primary1 text-nu20">
                 <IoIosArrowForward className="text-[16px]" />
               </button>

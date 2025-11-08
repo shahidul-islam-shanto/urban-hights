@@ -5,6 +5,7 @@ import BuyOrSell from "../../Components/BuyOrSell /BuyOrSell";
 import FeaturedProperties from "../../Components/FeaturedProperties/FeaturedProperties";
 import FeaturedCard from "../../Components/FeaturedCard/FeaturedCard";
 import RealityProperty from "../../Components/RealityProperty/RealityProperty";
+import Testimonials from "../../Components/Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
           "Choose from different templates and lay them out, full-width or boxed, grid or listed."
         }
       />
+      <Testimonials />
     </>
   );
 };

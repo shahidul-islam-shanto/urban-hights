@@ -25,7 +25,6 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import FeaturedCard from "../FeaturedCard/FeaturedCard";
 
 const FeaturedPropertiesCard = ({ propertiesCard }) => {
   const { title, location, image, description, area, room, washroom, price } =
