@@ -7,6 +7,8 @@ import FeaturedCard from "../../Components/FeaturedCard/FeaturedCard";
 import RealityProperty from "../../Components/RealityProperty/RealityProperty";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import MeetOurTeam from "../../Components/MeetOurTeam/MeetOurTeam";
+import Newsletter from "../../Components/Newsletter/Newsletter";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -32,7 +34,14 @@ const Home = () => {
         }
       />
       <Testimonials />
-      <MeetOurTeam title={"Meet Our Expert Agents"} description={"Real experts. Real results. Meet the people who turn your property goals into reality."} />
+      <MeetOurTeam
+        title={"Meet Our Expert Agents"}
+        description={
+          "Real experts. Real results. Meet the people who turn your property goals into reality."
+        }
+      />
+      <Newsletter />
+      <Footer />
     </>
   );
 };

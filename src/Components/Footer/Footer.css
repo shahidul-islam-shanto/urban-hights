@@ -1,0 +1,8 @@
+.footer-section {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.76) 0%,
+      rgba(0, 0, 0, 0.76) 100%
+    ),
+    url("../../assets/image/footer.png") lightgray 50% / cover no-repeat;
+}
