@@ -3,12 +3,12 @@ import Hero from "../../Components/Hero/Hero";
 import OurFeatured from "../../Components/OurFeatured/OurFeatured";
 import BuyOrSell from "../../Components/BuyOrSell /BuyOrSell";
 import FeaturedProperties from "../../Components/FeaturedProperties/FeaturedProperties";
-import FeaturedCard from "../../Components/FeaturedCard/FeaturedCard";
 import RealityProperty from "../../Components/RealityProperty/RealityProperty";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import MeetOurTeam from "../../Components/MeetOurTeam/MeetOurTeam";
 import Newsletter from "../../Components/Newsletter/Newsletter";
 import Footer from "../../Components/Footer/Footer";
+import LogoIcon from "../../Components/LogoIcon/LogoIcon";
 
 const Home = () => {
   return (
@@ -40,6 +40,7 @@ const Home = () => {
           "Real experts. Real results. Meet the people who turn your property goals into reality."
         }
       />
+      <LogoIcon />
       <Newsletter />
       <Footer />
     </>

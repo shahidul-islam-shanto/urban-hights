@@ -12,7 +12,6 @@ import { FaBed } from "react-icons/fa";
 import { FaBath } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { IoLocationOutline } from "react-icons/io5";
-
 import "./FeaturedCard.css";
 
 const FeaturedCard = ({ featured }) => {
