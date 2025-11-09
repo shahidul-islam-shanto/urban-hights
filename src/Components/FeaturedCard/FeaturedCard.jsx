@@ -21,18 +21,18 @@ const FeaturedCard = ({ featured }) => {
 
   return (
     <>
-      <div className=" bg-nu10">
-        <div className="relative overflow-hidden group mb-6 ">
+      <div>
+        <div className="relative group mb-6 overflow-hidden">
           <div className="absolute inset-0 bg-[#e8e9eaa4] opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
           <img className="w-full h-[360px]" src={image} alt="" />
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-300">
             <div className="flex justify-center items-center gap-4">
-              <Link to={""} className="">
+              <Link to={"javascript:void(0)"} className="">
                 <button className="bg-nu10 text-nu20 px-3 py-3 rounded-full">
                   <FaPlus className="text-[20px] font-bold text-primary1 " />
                 </button>
               </Link>
-              <Link to={""} className="">
+              <Link to={"javascript:void(0)"} className="">
                 <button className="bg-nu10 text-nu20 px-3 py-3 rounded-full">
                   <MdOutlineFavoriteBorder className="text-[20px] font-bold  text-primary1" />
                 </button>

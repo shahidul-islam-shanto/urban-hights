@@ -3,17 +3,15 @@ import React from "react";
 const Newsletter = () => {
   return (
     <>
-      <div className="bg-primary1">
+      <div className="bg-primary1 overflow-hidden relative z-10">
         <div className="container-2">
           <div class="z-40 relative">
             <div
               className="grid grid-cols-12 gap-6 lg:px-10 md:px-8 sm:px-6 px-4 lg:py-16 md:py-14 sm:py-12 py-10"
-              data-aos="flip-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="2800"
+            
             >
               <div className="lg:col-span-6 col-span-12">
-                <div className="">
+                <div className="" data-aos="fade-right">
                   <h3 className="font-fontMont text-nu30 font-medium mb-3">
                     Subscribe Newsletter
                   </h3>
@@ -23,7 +21,7 @@ const Newsletter = () => {
 
               <div className="lg:col-span-6 col-span-12">
                 <form>
-                  <div className="flex max-xl:flex-wrap items-center">
+                  <div className="flex max-xl:flex-wrap items-center" data-aos="fade-left">
                     <input
                       type="text"
                       className="px-4 sm:py-3 py-2.5 w-[60%] bg-nu10 text-nu30 placeholder:text-nu20 rounded-none rounded-l-full"

@@ -11,18 +11,21 @@ import TestimonialsText from "./TestimonialsText";
 const Testimonials = () => {
   return (
     <>
-      <div className="xl:pt-20 md:pt-18 sm:pt-16 pt-12 ">
+      <div className="xl:pt-20 md:pt-18 sm:pt-16 pt-12 overflow-hidden">
         <div className="grid grid-cols-12 items-center bg-nu30">
           <div className="lg:col-span-6 col-span-12">
             <img
               className="w-full 2xl:h-full lg:h-[500px]"
+              data-aos="zoom-in"
               src={testimonials}
               alt=""
             />
           </div>
           <div className="lg:col-span-6 col-span-12">
             <div className="xl:px-12 lg:px-10 md:px-8 sm:px-6 px-4 xl:py-16 lg:py-14 md:py-12 py-10">
-              <h2 className="mb-6 text-nu20">Testimonials</h2>
+              <h2 className="mb-6 text-nu20" data-aos="fade-left">
+                Testimonials
+              </h2>
               <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

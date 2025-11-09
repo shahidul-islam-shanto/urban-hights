@@ -6,69 +6,10 @@ import { IoClose } from "react-icons/io5";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
-  // const [openDropdown, setOpenDropdown] = useState(false);
-
-  // const [activeDropdown, setActiveDropdown] = useState(null);
-
-  // const toggleDropdown = (index) => {
-  //   setActiveDropdown(activeDropdown === index ? null : index);
-  // };
   const [activeDropdown, setActiveDropdown] = useState(null);
-
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
-
-  // const menus = [
-  //   {
-  //     title: "Company",
-  //     // links: ["About Us", "Investor Relations", "Careers"],
-  //   },
-  //   {
-  //     title: "Features",
-  //     links: ["Modern UI", "Fast API", "High Security"],
-  //   },
-  //   {
-  //     title: "Download",
-  //     links: ["iOS App", "Android App"],
-  //   },
-  //   {
-  //     title: "FAQ",
-  //     links: ["Support", "Terms & Policy"],
-  //   },
-  // ];
-
-  // const menuItems = [
-  //   {
-  //     name: "Home",
-  //     path: "/",
-  //   },
-  //   {
-  //     name: "Properties",
-  //     type: "dropdown",
-  //     links: ["Demo", "Demo"],
-  //   },
-  //   {
-  //     name: "Services",
-  //     type: "dropdown",
-  //     links: ["Demo", "Demo"],
-  //   },
-  //   {
-  //     name: "Features",
-  //     type: "dropdown",
-  //     links: ["Demo", "Demo"],
-  //   },
-  //   {
-  //     name: "Agents",
-  //     type: "dropdown",
-  //     links: ["Demo", "Demo"],
-  //   },
-  //   {
-  //     name: "Contact",
-  //     path: "/contact",
-  //   },
-  // ];
-
   const menuItems = [
     {
       name: "Home",
@@ -116,7 +57,7 @@ const MobileMenu = () => {
 
   return (
     <>
-      <nav className="bg-nu10 lg:hidden block w-full z-20 top-0 left-0 ">
+      <nav className="bg-nu10 lg:hidden block w-full z-20 top-0 left-0 overflow-hidden">
         <ul className="max-w-[90vw] flex flex-wrap justify-between items-center relative mx-auto py-6">
           <div className="">
             <Link to={"/"} className="flex items-center">
@@ -142,69 +83,25 @@ const MobileMenu = () => {
           ></div>
 
           <div
-            className={`fixed top-0 right-0 w-[73%] h-screen bg-black text-white z-50 flex flex-col items-center justify-center gap-8 uppercase text-2xl transform transition-transform duration-500 ease-in-out ${
+            className={`fixed top-0 right-0 w-[73%] h-screen bg-black text-nu10 z-50 flex flex-col items-center justify-center gap-8 uppercase transform transition-transform duration-500 ease-in-out ${
               open ? "translate-x-0" : "translate-x-full"
             }`}
           >
             <button
-              className="absolute top-5 right-5 text-3xl"
+              className="absolute top-5 right-5 text-[30px]"
               onClick={() => setOpen(false)}
             >
               <IoClose />
             </button>
-            {/* dropdown menu */}
-            <div className="bg-black text-white">
-              {/* <ul className="space-y-2 text-[24px]">
-                {menuItems.map((item, index) => (
-                  <li key={index} className="text-[24px]">
-                    {item.type === "dropdown" ? (
-                      <>
-                        <button
-                          className="w-full flex items-center gap-2 text-[24px] justify-between py-2"
-                          onClick={() => toggleDropdown(index)}
-                        >
-                          {item.name}
-                          <span
-                            className={`transition-transform duration-300 ${
-                              activeDropdown === index ? "rotate-180" : ""
-                            }`}
-                          >
-                            <IoIosArrowDown />
-                          </span>
-                        </button>
-
-                        <ul
-                          className={`overflow-hidden transition-all duration-500 pl-3 ${
-                            activeDropdown === index
-                              ? "max-h-40 opacity-100"
-                              : "max-h-0 opacity-0"
-                          }`}
-                        >
-                          {item.links.map((sub, i) => (
-                            <li key={i}>
-                              <Link to="#" className="block py-2">
-                                {sub}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </>
-                    ) : (
-                      <Link to={item.path} className="block py-2">
-                        {item.name}
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul> */}
-
+            
+            <div className="bg-black text-nu10">
               <ul className="space-y-2">
                 {menuItems.map((item, index) => (
                   <li key={index}>
                     {item.type === "dropdown" ? (
                       <>
                         <button
-                          className="w-full flex items-center gap-2 text-[24px] justify-between py-2"
+                          className="w-full flex items-center gap-2 justify-between py-2"
                           onClick={() => toggleDropdown(index)}
                         >
                           {item.name}

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const HeaderTop = () => {
   return (
     <>
-      <div className="py-4 3xl:px-0 px-10 bg-secondary1">
+      <div className="py-4 3xl:px-0 px-10 bg-secondary1 overflow-hidden">
         <div className="container-2">
           <div className="flex max-md:flex-wrap md:justify-between justify-center items-center gap-4">
             <div className="flex items-center gap-2">

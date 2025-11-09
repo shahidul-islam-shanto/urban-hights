@@ -10,7 +10,7 @@ import { MdOutlineMail } from "react-icons/md";
 const Footer = () => {
   return (
     <>
-      <div className="xl:py-20 md:py-18 sm:py-16 py-12 footer-section 2xl:px-10 sm:px-10 px-3">
+      <div className="xl:py-20 md:py-18 sm:py-16 py-12 footer-section 2xl:px-10 sm:px-10 px-3 overflow-hidden">
         <div className="container-2">
           <div className="grid grid-cols-12 lg:gap-10 md:gap-8 sm:gap-6 gap-4">
             <div className="lg:col-span-3 sm:col-span-6 col-span-12">
@@ -95,7 +95,7 @@ const Footer = () => {
                     data-aos="fade-right"
                     data-aos-duration="1600"
                   >
-                    <Link to={""} className="text-nu10">
+                    <Link to={"javascript:void(0)"} className="text-nu10">
                       Teams of use
                     </Link>
                   </li>
@@ -105,7 +105,7 @@ const Footer = () => {
                     data-aos="fade-right"
                     data-aos-duration="1600"
                   >
-                    <Link to={""} className="text-nu10">
+                    <Link to={"javascript:void(0)"} className="text-nu10">
                       Privacy Policy
                     </Link>
                   </li>
@@ -114,7 +114,7 @@ const Footer = () => {
                     data-aos="fade-right"
                     data-aos-duration="1600"
                   >
-                    <Link to={""} className="text-nu10">
+                    <Link to={"javascript:void(0)"} className="text-nu10">
                       Contact Support
                     </Link>
                   </li>
@@ -123,7 +123,7 @@ const Footer = () => {
                     data-aos="fade-right"
                     data-aos-duration="1600"
                   >
-                    <Link to={""} className="text-nu10">
+                    <Link to={"javascript:void(0)"} className="text-nu10">
                       Knowledgebase
                     </Link>
                   </li>
@@ -132,7 +132,7 @@ const Footer = () => {
                     data-aos="fade-right"
                     data-aos-duration="1600"
                   >
-                    <Link to={""} className="text-nu10">
+                    <Link to={"javascript:void(0)"} className="text-nu10">
                       Careers
                     </Link>
                   </li>
@@ -141,7 +141,7 @@ const Footer = () => {
                     data-aos="fade-right"
                     data-aos-duration="1600"
                   >
-                    <Link to={""} className="text-nu10">
+                    <Link to={"javascript:void(0)"} className="text-nu10">
                       FAQs
                     </Link>
                   </li>

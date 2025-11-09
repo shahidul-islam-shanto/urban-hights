@@ -9,7 +9,7 @@ const FeaturedPropertiesCard = ({ propertiesCard }) => {
     propertiesCard;
   return (
     <>
-      <div className="bg-nu10">
+      <div className="bg-nu10 overflow-hidden" data-aos="zoom-in">
         <div className="relative overflow-hidden group mb-6 ">
           <img className="w-full h-[360px]" src={image} alt="" />
         </div>

@@ -4,7 +4,7 @@ import testimonialsMan from "../../assets/image/testimonials-man.png";
 const TestimonialsText = ({name, comment, timeline}) => {
   return (
     <>
-      <div className="">
+      <div className="" data-aos="zoom-in">
        
          
           <p className="text-nu60 mb-5">
