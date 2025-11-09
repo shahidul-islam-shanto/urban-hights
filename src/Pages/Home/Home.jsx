@@ -13,6 +13,7 @@ import LogoIcon from "../../Components/LogoIcon/LogoIcon";
 const Home = () => {
   return (
     <>
+    
       <Hero />
       <OurFeatured
         title={"Our Featured Exclusive"}
