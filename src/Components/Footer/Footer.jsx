@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <div className="xl:py-20 md:py-18 sm:py-16 py-12 footer-section 2xl:px-10 sm:px-10 px-3 overflow-hidden">
         <div className="container-2">
-          <div className="grid grid-cols-12 lg:gap-10 md:gap-8 sm:gap-6 gap-4">
+          <div className="grid grid-cols-12 lg:gap-10 md:gap-8 sm:gap-6 gap-4 mt-10">
             <div className="lg:col-span-3 sm:col-span-6 col-span-12">
               <div>
                 <div className="sm:mb-5 mb-4">
@@ -193,7 +193,7 @@ const Footer = () => {
                   </li>
                   <li
                     className="mt-3"
-                    data-aos="fade-right"
+                    data-aos="sm:fade-right fade-right"
                     data-aos-duration="2400"
                   >
                     <Link

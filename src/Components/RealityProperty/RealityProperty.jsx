@@ -50,7 +50,7 @@ const RealityProperty = ({ title, description }) => {
                 data-aos="zoom-in"
                 alt=""
               />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-primary1  3xl:px-80 2xl:px-60 xl:px-50 lg:px-40 md:px-34 px-24 py-[60%] bg-[#ffffffbd]  flex flex-col justify-center items-center text-center">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-primary1  3xl:px-80 2xl:px-60 xl:px-50 lg:px-40 md:px-34 px-24 2xl:py-[60%] xl:py-[50%] lg:py-[45%] py-[50%] bg-[#ffffffbd]  flex flex-col justify-center items-center text-center">
                 <h2 className="text-2xl font-semibold text-gray-800 lg:text-3xl">
                   New Jersey
                 </h2>
