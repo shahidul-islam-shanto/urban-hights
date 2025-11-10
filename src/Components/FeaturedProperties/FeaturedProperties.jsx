@@ -54,9 +54,13 @@ const FeaturedProperties = ({ title, description }) => {
     <>
       <div className="xl:pt-20 md:pt-18 sm:pt-16 pt-12 2xl:px-10 sm:px-10 px-3 bg-secondary1 overflow-hidden">
         <div className="container-2">
-          <div className="text-center mb-12">
-            <h1 className="text-nu20 mb-4" data-aos="fade-left">{title}</h1>
-            <p className="text-nu50" data-aos="fade-right">{description}</p>
+          <div className="text-center mb-12 px-6">
+            <h1 className="text-nu20 mb-4" data-aos="fade-left">
+              {title}
+            </h1>
+            <p className="text-nu50" data-aos="fade-right">
+              {description}
+            </p>
           </div>
           <div className="">
             <Swiper
@@ -77,7 +81,7 @@ const FeaturedProperties = ({ title, description }) => {
                   slidesPerView: 2,
                 },
                 992: {
-                  slidesPerView: 1,
+                  slidesPerView: 2,
                 },
                 768: {
                   slidesPerView: 1,

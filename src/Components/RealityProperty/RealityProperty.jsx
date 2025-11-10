@@ -12,7 +12,7 @@ const RealityProperty = ({ title, description }) => {
     <>
       <div className="xl:pt-20 md:pt-18 sm:pt-16 pt-12 overflow-hidden">
         <div className="container-2">
-          <div className="mb-12 text-center">
+          <div className="mb-12 text-center px-6">
             <h1 className="text-nu20 mb-4" data-aos="fade-left">
               {title}
             </h1>
@@ -62,12 +62,14 @@ const RealityProperty = ({ title, description }) => {
             </div>
             <img
               src={gallery4}
-              className="w-full h-48 sm:h-full object-cover rounded-lg" data-aos="zoom-in"
+              className="w-full h-48 sm:h-full object-cover rounded-lg"
+              data-aos="zoom-in"
               alt=""
             />
             <img
               src={gallery5}
-              className="w-full h-48 sm:h-full object-cover rounded-lg" data-aos="zoom-in"
+              className="w-full h-48 sm:h-full object-cover rounded-lg"
+              data-aos="zoom-in"
               alt=""
             />
           </div>
